@@ -7,15 +7,16 @@
     <body>
         <h1>Events</h1>
         <p style="color:#808080"> Manage your events and inventories</p>
-        <button style="background-color: #000000; color:#FFFFFF; padding: 10px;  margin-left: 1300px; border-radius: 10px; position: relative; left: 65px; top:-70px"> + Add Event</button>
+        <button style="background-color: #000000; color:#FFFFFF; padding: 10px;  margin-left: 1300px; border-radius: 10px; position: relative; left: 65px; top:-70px" id="mybutton" onclick="myFunction()"> + Add Event</button>
 
         <div border="1" style="border: 1px solid #808080; padding: 20px; width: 400px; margin-top: 20px; border-radius: 10px;">
             <h5> Ind vs Eng Test Series </h5>
             <button style=" color:#000000; padding: 5px; border-radius : 10px; position: relative; left: 370px; top: -47px;"> Edit</button>
-            <p style="color: #808080; position: relative;"> Event Date: </p>
-            <p style=" color:#000000; text-align: right ; right: 10px; top: 10px;"> 27 Aug 2025 - 15 Sep 2025</p>
-            <p style="color: #808080;"> Type: </p>
-            <p style="color:#000000; text-align: right ; right: 10px;"> Sports </p>
+            <p style="color: #808080; position: absolute;"> Event Date: </p>
+            <p style="color:#000000; text-align: center;"> 27 Aug 2025 - 15 Sep 2025</p>
+            <p style="color: #808080; position: absolute;"> Type: </p>
+            <p style="color:#000000; text-align: center;"> Sports </p>
+            <br>
             <p style="color: #808080;"> Inventories & Project Owners: </p>
             <p style="color:#000000; justify-content: left;"> OTT</p>
             <p style="color: #808080;"> Owner: John Smith</p>
@@ -25,20 +26,42 @@
             <p style="color: #808080;">Owner: Mike Davis</p>
         </div>
 
-        <div border="1" style="border: 1px solid #808080; padding: 20px; width: 400px; margin-top: 20px; border-radius: 10px;">
-            <h5> Ind vs Eng Test Series </h5>
-            <button style=" color:#000000; padding: 5px; border-radius : 10px; position: relative; left: 370px; top: -47px;"> Edit</button>
+        <div border="1" style="border: 1px solid #808080; padding: 20px; width: 400px; margin-top: 20px; border-radius: 10px; position: relative; left: 486px; top: -507px;">
+            <h5> IPL 2025 </h5>
+            <button style=" color:#000000; padding: 5px; border-radius : 10px; position: relative; left: 370px; top: -45px;"> Edit</button>
             <p style="color: #808080; position: relative;"> Event Date: </p>
             <p style=" color:#000000; text-align: right ; "> 27 Aug 2025 - 15 Sep 2025</p>
             <p style="color: #808080;"> Type: </p>
-            <p style=" color:#000000;"> Sports </p>
+            <p style=" color:#000000;" > Sports </p>
             <p style="color: #808080;"> Inventories & Project Owners: </p>
-            <p style=" color:#000000;"> OTT</p>
-            <p style="color: #808080;"> Owner: John Smith</p>
-            <p style=" color:#000000;">Bill Boards</p>
-            <p style="color: #808080;"> Owner: John Smith</p>
-            <p style=" color:#000000;">Influencer Marketing </p>
-            <p style="color: #808080;">Owner: Mike Davis</p>
+            <p style=" color:#000000;"> Digit Ads</p>
+            <p style="color: #808080;"> Owner: Alex Wilson</p>
+            <p style=" color:#000000;">Stadium Branding</p>
+            <p style="color: #808080;"> Owner: Emma Brown</p>
         </div>
-    </body>
+
+        <div>
+        <h1> Add New Event </h1>
+            div> 
+                <label for="event-name"> Event Name: </label>
+                <input type="text" id="event-name" name="event-name"><br><br>
+
+                <label for="event-date"> Event Date: </label>
+                <input type="date" id="event-date" name="event-date"><br><br>
+
+                <label for="event-type"> Event Type: </label>
+                <input type="text" id="event-type" name="event-type"><br><br>
+
+                <label for="inventories"> Inventories & Project Owners: </label>
+                <input type="text" id="inventories" name="inventories"><br><br>
+
+                <button type="submit"> Save Event </button>
+                </div>
+        </div>
+    <script>
+         function myFunction(element, color) {
+                    
+        }
+    </script>
+</body>
 </html>
